@@ -7,7 +7,6 @@ function HomePage() {
             <div>
                 <FinancialOverViewSection />
             </div>
-            <div>خانم شیخ احمدی</div>
             <div>حجاز</div>
             <div>حجاز</div>
             <div>حجاز</div>

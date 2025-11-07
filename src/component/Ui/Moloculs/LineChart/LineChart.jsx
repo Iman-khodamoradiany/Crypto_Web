@@ -5,8 +5,8 @@ function LineChart({lineChartData}){
     return(
         <div className=" chart-container" >
             <Line 
-               height={'150px'}
-               width={'200'}
+               height={'100px'}
+               width={'150'}
                data={lineChartData}
                options={{
                  responsive: true,

@@ -37,6 +37,54 @@ function Icons({ Name }) {
                     </linearGradient>
                 </defs>
             </svg>
+        case "lock":
+            return <svg width="44" height="58" viewBox="0 0 44 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.9 14.3C9.9 7.62809 15.3291 2.2 22.0022 2.2C28.673 2.2 34.1 7.62809 34.1 14.3L34.1792 23.9184H36.1724L36.3 14.3C36.3 6.40338 29.8977 0 22.0022 0C14.1023 0 7.7 6.40338 7.7 14.3V24.2H0V57.2H44V24.2H9.9V14.3ZM41.8 54.9999H2.2V26.3999H41.8V54.9999Z" fill="black" fill-opacity="0.4" />
+            </svg>
+        case "centerOfLock":
+            return <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.4 0C1.96996 0 0 1.96996 0 4.4C0 6.45013 1.40222 8.17286 3.3 8.6614V13.2H5.5V8.6614C7.39777 8.17286 8.8 6.45013 8.8 4.4C8.8 1.96996 6.83004 0 4.4 0ZM4.4 6.59997C3.18697 6.59997 2.2 5.613 2.2 4.39997C2.2 3.18695 3.18697 2.19997 4.4 2.19997C5.61302 2.19997 6.6 3.18695 6.6 4.39997C6.6 5.613 5.61302 6.59997 4.4 6.59997Z" fill="black" fill-opacity="0.4" />
+            </svg>
+
+        case "HexagonAsBgOfLock":
+            return <svg width="66" height="76" viewBox="0 0 66 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22.7042V52.5359C0 55.3184 1.4569 57.8896 3.822 59.2808L29.178 74.1966C31.5431 75.5878 34.4569 75.5878 36.822 74.1966L62.178 59.2808C64.5431 57.8896 66 55.3184 66 52.5359V22.7042C66 19.9216 64.5431 17.3505 62.178 15.9592L36.822 1.04342C34.4569 -0.347805 31.5431 -0.347805 29.178 1.04342L3.822 15.9592C1.4569 17.3505 0 19.9216 0 22.7042Z" fill="url(#paint0_linear_1_254)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1_254" x1="-11.6199" y1="4.78893" x2="-26.5116" y2="75.9737" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#C8E6C9" />
+                        <stop offset="1" stop-color="#FFECB3" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        case "Hexagon1SecurityCartInfo":
+            return <svg width="79.1" height="124.6" viewBox="0 0 113 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-48.3238 155.875C-45.6905 162.329 -39.7398 166.858 -32.7131 167.755L42.6199 177.378C49.6466 178.276 56.6814 175.406 61.0748 169.849L108.176 110.274C112.569 104.718 113.653 97.3182 111.02 90.864L82.7882 21.6662C80.1549 15.2117 74.2043 10.6828 67.1775 9.78511L-8.15555 0.162231C-15.1822 -0.735204 -22.217 2.13491 -26.6105 7.69165L-73.7116 67.2664C-78.105 72.8234 -79.1891 80.2224 -76.5558 86.6768L-48.3238 155.875Z" fill="black" fill-opacity="0.03" />
+            </svg>
+        case "Hexagon2SecurityCartInfo":
+            return <svg width="133.7" height="124.6" viewBox="0 0 191 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6497 155.875C32.283 162.329 38.2337 166.858 45.2604 167.755L120.593 177.378C127.62 178.276 134.655 175.406 139.048 169.849L186.149 110.274C190.543 104.718 191.627 97.3182 188.994 90.864L160.762 21.6662C158.128 15.2117 152.178 10.6828 145.151 9.78511L69.818 0.162231C62.7913 -0.735204 55.7565 2.13491 51.363 7.69165L4.26188 67.2664C-0.131459 72.8234 -1.21563 80.2224 1.41772 86.6768L29.6497 155.875Z" fill="black" fill-opacity="0.03" />
+            </svg>
+        case "Hexagon3SecurityCartInfo":
+            return <svg width="57.4" height="124.6" viewBox="0 0 82 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-79.0195 155.875C-76.3863 162.329 -70.4355 166.858 -63.4088 167.755L11.9242 177.378C18.9509 178.276 25.9857 175.406 30.3791 169.849L77.4803 110.274C81.8737 104.718 82.9578 97.3182 80.3245 90.864L52.0925 21.6662C49.4592 15.2117 43.5086 10.6828 36.4818 9.78511L-38.8513 0.162231C-45.878 -0.735204 -52.9127 2.13491 -57.3062 7.69165L-104.407 67.2664C-108.801 72.8234 -109.885 80.2224 -107.251 86.6768L-79.0195 155.875Z" fill="black" fill-opacity="0.03" />
+            </svg>
+        case "orangeHexagonSecurityCartInfo":
+            return <svg width="53.2" height="55.3" viewBox="0 0 76 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0839516 50.2359C-0.33669 53.1359 0.843159 56.0185 3.17921 57.7975L28.2236 76.8704C30.5597 78.6494 33.6968 79.0547 36.4535 77.9336L66.0077 65.9141C68.7644 64.7931 70.7217 62.3158 71.1423 59.4158L75.6522 28.3232C76.0729 25.423 74.893 22.5406 72.557 20.7615L47.5126 1.68854C45.1765 -0.0904421 42.0394 -0.495719 39.2827 0.625344L9.72844 12.6448C6.97173 13.766 5.01448 16.2431 4.59382 19.1433L0.0839516 50.2359Z" fill="url(#paint0_linear_1_38)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1_38" x1="-9.46185" y1="53.5017" x2="74.0357" y2="124.448" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFA000" />
+                        <stop offset="1" stop-color="#FFECB3" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        
+
+
+
+
+
+
 
 
 
