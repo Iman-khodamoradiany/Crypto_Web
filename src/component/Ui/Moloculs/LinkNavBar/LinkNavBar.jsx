@@ -12,7 +12,12 @@ function LinkNavBar() {
                     </li>
                 ))}
                 <li>
-                    <Button className={"text-[#1DAEFF] border-2 px-9 py-2 rounded-xl border-[#1DAEFF] text-[1vw]"}>LOG IN</Button>
+                    <Link to={"/LoginPage"}>
+                        <Button
+                            className={"text-[#1DAEFF] border-2 px-9 py-2 rounded-xl border-[#1DAEFF] text-[1vw] transition-all duration-300 hover:text-white hover:bg-[#1DAEFF]"}>
+                            LOG IN
+                        </Button>
+                    </Link>
                 </li>
             </ul>
         </div>
