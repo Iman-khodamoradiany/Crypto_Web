@@ -1,5 +1,7 @@
 import Icons from "../../Atoms/Icons/Icons"
+import ChartComponent from "../../Moloculs/ChartComponent/ChartComponent"
 import ChartInfoBox from "../../Moloculs/ChartInfoBox/ChartInfoBox"
+
 function FinancialOverViewSection(){
     return(
         <div className="flex flex-col gap-10">
@@ -14,9 +16,15 @@ function FinancialOverViewSection(){
                     <Icons Name={'halfLargeHexagon'} />
                </div>
            </div>
-           <div className="grid grid-cols-2 gap-2 py-8">
-               
-               <div></div>
+           <div className="grid grid-cols-2 gap-8 py-4">
+                <div className="flex flex-col items-end justify-end py-4">
+                   <div className="w-10/12">
+                       <div className="flex justify-end pe-10">
+                           <img src="/Tooltip.png" alt="" className="-my-8 me-4 z-10"/>
+                       </div>
+                       <ChartComponent />
+                   </div>
+               </div>
                <ChartInfoBox />
            </div>
         </div>
