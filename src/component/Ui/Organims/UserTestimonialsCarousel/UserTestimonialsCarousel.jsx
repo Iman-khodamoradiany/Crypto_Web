@@ -21,10 +21,7 @@ function UserTestimonialsCarousel(){
             }}}
                 scrollbar={{draggable:true, el:'swiper-scrollbar'}} direction="horizontal" loop="true" speed={300} grabCursor:true autoplay={{delay:'3000',pauseOnMouseEnter:true}} 
                 ally={{prevSlideMessage:'Previous slide',nextSlideMessage:'Next slide'}} effect="creative" creativeEffect={{prev:{translate:[0,0,-400]},next:{translate:['100%',0,0]}}}
-                className="swiper-container"
-                 style={{
-                      "--swiper-navigation-color": "white",
-                    }}>
+                className="swiper-container">
                     {
                         userTestimonialsArray.map((item,index)=>(
                                 <SwiperSlide key={index} className="flex flex-col items-center justify-center gap-6 " style={{height:"300px"}}>

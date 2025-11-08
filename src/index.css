@@ -20,19 +20,6 @@
   padding: 5px;
 }
 
-.swiper-button-next::after, 
-.swiper-button-prev::after{
-    display: none !important;
-    content: none !important;
-   }
- .swiper-button-next{
-  
-  color: transparent;
-  outline: none;
-  
- }  
-
-
 }
 
    
