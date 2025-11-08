@@ -1,9 +1,13 @@
+import UserTestimonialsCarousel from "../../Organims/UserTestimonialsCarousel/UserTestimonialsCarousel"
+
 function AboutUs(){
     return(
         <div>
             <div>حجاز</div>
             <div></div>
-            <div>خانم شیخ احمدی</div>
+            <div>
+                <UserTestimonialsCarousel />
+            </div>
             <div>حجاز</div>
         </div>
     )
