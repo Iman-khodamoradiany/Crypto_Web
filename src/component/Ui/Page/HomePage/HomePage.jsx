@@ -1,9 +1,12 @@
+import FinancialOverViewSection from "../../Organims/FinancialOverviewSection/FinancialOverviewSection"
+
 function HomePage() {
     return (
         <div>
             <div></div>
-            <div>خانم شیخ احمدی</div>
-            <div>خانم شیخ احمدی</div>
+            <div>
+                <FinancialOverViewSection />
+            </div>
             <div>حجاز</div>
             <div>حجاز</div>
             <div>حجاز</div>
