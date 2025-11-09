@@ -6,7 +6,6 @@ function Icons({ Name }) {
             return <svg width="146" height="266" viewBox="0 0 146 266" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M44.3984 233.27C48.3411 242.934 57.2393 249.72 67.7411 251.072L180.331 265.563C190.833 266.915 201.343 262.627 207.902 254.315L278.221 165.198C284.78 156.886 286.391 145.812 282.449 136.148L240.177 32.5393C236.235 22.8752 227.337 16.0894 216.835 14.7374L104.244 0.245767C93.7426 -1.10574 83.233 3.18205 76.6739 11.4943L6.35478 100.611C-0.204196 108.924 -1.81575 119.997 2.12712 129.661L44.3984 233.27Z" fill="black" fill-opacity="0.03" />
             </svg>
-
         case "MediumGrayHexagon":
             return <svg width="191" height="178" viewBox="0 0 191 178" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6497 155.875C32.283 162.329 38.2337 166.858 45.2604 167.755L120.593 177.378C127.62 178.276 134.655 175.406 139.048 169.849L186.149 110.274C190.543 104.718 191.627 97.3182 188.994 90.864L160.762 21.6662C158.128 15.2117 152.178 10.6828 145.151 9.78511L69.818 0.162231C62.7913 -0.735204 55.7565 2.13491 51.363 7.69165L4.2619 67.2664C-0.131436 72.8234 -1.21561 80.2224 1.41774 86.6768L29.6497 155.875Z" fill="black" fill-opacity="0.03" />
@@ -32,6 +31,16 @@ function Icons({ Name }) {
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 19.3999V44.89C0 47.2675 1.24487 49.4645 3.26576 50.6533L24.9315 63.3982C26.9524 64.587 29.4421 64.587 31.463 63.3982L53.1288 50.6533C55.1497 49.4645 56.3946 47.2675 56.3946 44.89V19.3999C56.3946 17.0223 55.1497 14.8254 53.1288 13.6366L31.463 0.89156C29.4421 -0.297187 26.9524 -0.297187 24.9315 0.89156L3.26576 13.6366C1.24487 14.8254 0 17.0223 0 19.3999Z" fill="url(#paint0_linear_1_242)" />
                 <defs>
                     <linearGradient id="paint0_linear_1_242" x1="-9.9288" y1="4.09196" x2="-22.6532" y2="64.9167" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#C8E6C9" />
+                        <stop offset="1" stop-color="#FFECB3" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        case "hexagonInUserTestimonialsTitle":
+            return <svg width="76" height="86" viewBox="0 0 76 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 60.049C0 63.2294 1.67764 66.1683 4.40109 67.7585L33.5989 84.8074C36.3224 86.3975 39.6776 86.3975 42.4011 84.8074L71.5989 67.7585C74.3224 66.1683 76 63.2294 76 60.049V25.9511C76 22.7706 74.3224 19.8318 71.5989 18.2415L42.4011 1.19263C39.6776 -0.397544 36.3224 -0.397544 33.5989 1.19263L4.40109 18.2415C1.67764 19.8318 0 22.7706 0 25.9511V60.049Z" fill="url(#paint0_linear_1_700)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1_700" x1="-13.3805" y1="5.47379" x2="-30.2865" y2="86.8888" gradientUnits="userSpaceOnUse">
                         <stop stop-color="#C8E6C9" />
                         <stop offset="1" stop-color="#FFECB3" />
                     </linearGradient>
@@ -77,16 +86,7 @@ function Icons({ Name }) {
                         <stop offset="1" stop-color="#FFECB3" />
                     </linearGradient>
                 </defs>
-            </svg>      
-
-
-
-
-
-
-
-
-
+            </svg>
     }
 }
 
