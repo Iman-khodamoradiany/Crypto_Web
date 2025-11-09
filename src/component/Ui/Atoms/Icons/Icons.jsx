@@ -77,8 +77,7 @@ function Icons({ Name }) {
                         <stop offset="1" stop-color="#FFECB3" />
                     </linearGradient>
                 </defs>
-            </svg>
-        
+            </svg>      
 
 
 

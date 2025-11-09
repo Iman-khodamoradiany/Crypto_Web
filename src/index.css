@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: MyFont;
+    src: url(../public/Font/static/Montserrat-SemiBold.ttf);
+}
+
+*{
+    font-family: MyFont;
+}
+
+.NavBarAnimation::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: #1DAEFF;
+    transition: 0.8s;
+}
+
+.NavBarAnimation:hover::after{
+    width: 100%;
+}
+
+.NavBarAnimationAvtive::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: #1DAEFF;
+}
