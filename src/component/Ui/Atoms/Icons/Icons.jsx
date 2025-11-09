@@ -87,6 +87,7 @@ function Icons({ Name }) {
                     </linearGradient>
                 </defs>
             </svg>
+            
     }
 }
 
