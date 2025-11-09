@@ -3,7 +3,7 @@ import NavBar from "../Ui/Organims/NavBar/NavBar";
 function Layout({children}){
     return(
         <div>
-            <header className="h-[100vh]">
+            <header className="h-[10vh]">
                 <NavBar />
             </header>
             <main>

@@ -1,7 +1,9 @@
+import Header from "../../Organims/Header/Header"
+
 function HomePage() {
     return (
         <div>
-            <div></div>
+            <Header />
             <div>خانم شیخ احمدی</div>
             <div>خانم شیخ احمدی</div>
             <div>حجاز</div>
