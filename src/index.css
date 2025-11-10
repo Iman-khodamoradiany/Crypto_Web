@@ -4,7 +4,12 @@
 
 @font-face {
     font-family: MyFont;
-    src: url(../public/Font/static/Montserrat-SemiBold.ttf);
+    src: url(../public/Font/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: NormalFont;
+    src: url(../public/Font//static/Montserrat-Regular.ttf);
 }
 
 *{
