@@ -87,6 +87,31 @@ function Icons({ Name }) {
                     </linearGradient>
                 </defs>
             </svg>
+        case 'ArrowBottom':
+            return (<svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.33014 6L1.14441e-05 0H8.66027L4.33014 6Z" fill="#3A8BEA" />
+            </svg>
+            )
+        case "Settign":
+            return (
+                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.2273 11L19.5455 11M17.2273 11C17.2273 9.61929 16.1894 8.5 14.9091 8.5C13.6288 8.5 12.5909 9.61929 12.5909 11M17.2273 11C17.2273 12.3807 16.1894 13.5 14.9091 13.5C13.6288 13.5 12.5909 12.3807 12.5909 11M3.31818 3.5C3.31818 4.88071 4.35606 6 5.63636 6C6.91666 6 7.95455 4.88071 7.95455 3.5M3.31818 3.5C3.31818 2.11929 4.35606 0.999999 5.63636 0.999999C6.91666 0.999999 7.95455 2.11929 7.95455 3.5M3.31818 3.5L0.99999 3.5M7.95455 3.5L19.5455 3.5M12.5909 11L0.99999 11M3.31818 18.5C3.31818 19.8807 4.35606 21 5.63636 21C6.91666 21 7.95455 19.8807 7.95455 18.5M3.31818 18.5C3.31818 17.1193 4.35606 16 5.63636 16C6.91666 16 7.95455 17.1193 7.95455 18.5M3.31818 18.5L0.99999 18.5M7.95455 18.5L19.5455 18.5" stroke="#1DAEFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            )
+        case "Search":
+            return (
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15.7501 15.7498L12.4875 12.4873" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            )
+        case "Close":
+            return (
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 6 L18 18 M18 6 L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                </svg>
+
+            )
     }
 }
 
