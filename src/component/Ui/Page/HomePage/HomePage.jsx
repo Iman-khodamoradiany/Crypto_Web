@@ -5,10 +5,7 @@ function HomePage() {
     return (
         <div>
             <Header />
-            <div></div>
-            <div>
-                <FinancialOverViewSection />
-            </div>
+            <FinancialOverViewSection />
             <div>حجاز</div>
             <div>حجاز</div>
         </div>
