@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "../../Atoms/Button/Button";
 
 function ButtonFilterHeader() {
@@ -9,7 +10,7 @@ function ButtonFilterHeader() {
         { id: 3, title: "Rent" },
     ]
     return (
-        <div className="flex justify-start items-center gap-3">
+        <div className="flex justify-start items-center gap-1">
             {ListFilter.map((item) => (
                 <Button
                     onClick={() => setActive(item.id)}
