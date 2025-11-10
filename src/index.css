@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components{
+   
+  .custom-bullet.swiper-pagination-bullet{
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid #2e8231;
+  background-color: white;
+  opacity: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+  
+}
+.custom-bullet.swiper-pagination-bullet-active{
+  background-color: #4CAF50;
+  border: 2px solid #2e8231;
+  padding: 5px;
+}
+
+}
+
 @font-face {
     font-family: MyFont;
     src: url(../public/Font/static/Montserrat-Medium.ttf);
@@ -40,3 +61,4 @@
     left: 0;
     background-color: #1DAEFF;
 }
+

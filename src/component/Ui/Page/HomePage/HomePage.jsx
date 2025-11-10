@@ -1,12 +1,14 @@
 import Header from "../../Organims/Header/Header"
+import FinancialOverViewSection from "../../Organims/FinancialOverviewSection/FinancialOverviewSection"
 
 function HomePage() {
     return (
         <div>
             <Header />
-            <div>خانم شیخ احمدی</div>
-            <div>خانم شیخ احمدی</div>
-            <div>حجاز</div>
+            <div></div>
+            <div>
+                <FinancialOverViewSection />
+            </div>
             <div>حجاز</div>
             <div>حجاز</div>
         </div>
