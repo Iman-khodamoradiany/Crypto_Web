@@ -4,8 +4,8 @@ import P from "../../Atoms/P/P"
 function ChartInfoBox(){
     return(
         
-            <div className="flex flex-col gap-6 py-8">
-                <div className=" relative min-h-20">
+            <div className="flex flex-col gap-7">
+                <div className=" relative min-h-[5.3vw]">
                     <div className="absolute ">
                         <Icons Name={"smallLightGreenHexagon"} />
                     </div>
@@ -13,11 +13,11 @@ function ChartInfoBox(){
                         <Icons Name={"sphere"} />
                     </div>
                 </div>
-                <div className="flex flex-col gap-4">
-                    <P className="text-5xl font-semibold max-w-lg leading-tight">
+                <div className="flex flex-col gap-5">
+                    <P className="text-[clamp(1.8rem,3.6vw,4rem)] font-semibold max-w-xl leading-tight">
                         Fusce placerat enim et odio molestie sagittis 
                     </P>
-                    <P className='max-w-lg text-gray-500 text-lg '>
+                    <P className='max-w-lg text-gray-500 text-[clamp(1.rem,1.8vw,2.2rem)]'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                     </P>
                 </div>
