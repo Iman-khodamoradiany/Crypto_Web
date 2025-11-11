@@ -1,3 +1,4 @@
+import Footer from "../Ui/Organims/Footer/Footer";
 import NavBar from "../Ui/Organims/NavBar/NavBar";
 
 function Layout({children}){
@@ -9,8 +10,8 @@ function Layout({children}){
             <main>
                 {children}
             </main>
-            <footer>
-                
+            <footer className="w-full">
+                <Footer />
             </footer>
         </div>
     )

@@ -39,6 +39,16 @@
     src: url(../public/Font/Button/Ubuntu-Regular.ttf);
 }
 
+@font-face {
+    font-family: Lafog;
+    src: url(../public/Font/Footer/LufgaMedium.ttf);
+}
+
+@font-face {
+    font-family: LufagLight;
+    src: url(../public/Font/Footer/LufgaLight.ttf);
+}
+
 *{
     font-family: MyFont;
 }
@@ -68,3 +78,26 @@
     background-color: #1DAEFF;
 }
 
+.FooterUl > li:first-child{
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.FooterUl > li > a{
+    position: relative;
+}
+
+.FooterUl > li > a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: #1DAEFF;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.FooterUl > li > a:hover::after{
+    width: 100%;
+}
