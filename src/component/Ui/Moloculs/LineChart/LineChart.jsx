@@ -13,6 +13,28 @@ function LineChart({lineChartData}){
                  plugins:{
                     annotation: {
                         annotations: {
+                            // label: {
+                            //     type: 'label',
+                            //     xValue: 4.2,
+                            //     yValue: 110,
+                            //     position: 'top',
+                            //     backgroundColor: 'white',
+                            //     borderColor: 'lightGray',
+                            //     borderWidth: 1,
+                            //     content: ['BALANCE, $35.00'],
+                            //     font: {
+                            //            size: 20,
+                            //            weight: 'bold',
+                            //            color:'black'
+                            //         },
+                            //     padding: 16,
+                            //     cornerRadius: 4,
+                            //     textAlign: 'center',
+                            //     display: true,
+                            //     z:100,
+                            //     drawTime:'afterDatasetsDraw',
+                            //     clip:false
+                            // },
                             point1: {
                                 type: 'point',
                                 xValue:4.2,
@@ -29,23 +51,6 @@ function LineChart({lineChartData}){
                             borderColor: '#00bc00',
                             borderWidth: 1,
                         },
-                        // label1: {
-                        //     // height:"40px",
-                        //     // width:'50px',
-                        //     type: 'label',
-                        //     xValue: 4.2,
-                        //     yValue: 100,
-                        //     position:'top',
-                        //     backgroundColor: 'white',
-                        //     shadowColor: 'rgba(0, 0, 0, 0.7)',
-                        //     shadowBlur:'5',
-                        //     shadowOffsetX:'3',
-                        //     shadowOffsetY:'3',
-                        //     content:['i','BALANCE','$35.00'],
-                        //     font: {
-                        //         size: 10
-                        //     }
-                        // }
                         }
                     },
                     title:{
@@ -56,7 +61,11 @@ function LineChart({lineChartData}){
                     }
                  },
                  scales:{
-                    x:{
+                    x:{ 
+                         border:{
+                            dark:{color:'gray'},
+                            color:'lightGray'
+                        },
                         type:'linear',
                         min:0,
                         max:6.5,
@@ -65,21 +74,35 @@ function LineChart({lineChartData}){
                         },
                         ticks:{
                             stepSize:1,
+                            autoSkip:false,
                             callback:function(value){
-                                return Number.isInteger(value) ? value :null
+                                if(value===0) return ''
+                                return Number.isInteger(value) ? '0'+String(value) : null
                             }
                         }
                     },
                     y:{
+                        min:0,
+                        max:100,
                         border:{
-                            dash:[4,4]
+                            dash:[4,4],
+                            color:'lightGray',
+                            dark:{color:'gray'}
                         },
                         grid:{
                             display:true,
-                            
+                            color:'lightGray',
+                            dark:{color:'gray'},
                         },
                         ticks:{
-                            stepSize:20
+                            stepSize:20,
+                            callback: (value) => {
+                                const percentageValue = (value/100) * 100;
+                                if (percentageValue > 100.5) {
+                                    return '';
+                                }
+                                return `${percentageValue.toFixed(0)}%`;
+                            }
                         }
                     }
                  }

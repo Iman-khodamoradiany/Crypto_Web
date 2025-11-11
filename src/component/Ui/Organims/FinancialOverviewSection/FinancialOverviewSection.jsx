@@ -6,7 +6,7 @@ import HexagonsAsBgOfSecurityCardInfo from "../../Moloculs/HexagonsAsBgOfSecurit
 
 function FinancialOverViewSection(){
     return(
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 dark:bg-[black]">
            <div className="flex justify-end relative">
                <div className="absolute -top-20 right-28 ">
                     <Icons Name={'MediumGrayHexagon'} />

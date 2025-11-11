@@ -14,7 +14,7 @@ function ChartInfoBox(){
                     </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <P className="text-5xl font-semibold max-w-lg leading-tight">
+                    <P className="text-5xl font-semibold max-w-lg leading-tight dark:text-[white]">
                         Fusce placerat enim et odio molestie sagittis 
                     </P>
                     <P className='max-w-lg text-gray-500 text-lg '>
