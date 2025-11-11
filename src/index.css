@@ -39,6 +39,16 @@
     src: url(../public/Font/Button/Ubuntu-Regular.ttf);
 }
 
+@font-face {
+    font-family: Lafog;
+    src: url(../public/Font/Footer/LufgaMedium.ttf);
+}
+
+@font-face {
+    font-family: LufagLight;
+    src: url(../public/Font/Footer/LufgaLight.ttf);
+}
+
 *{
     font-family: MyFont;
 }

@@ -253,6 +253,14 @@ function Icons({ Name }) {
                     </defs>
                 </svg>
             )
+        case "ArrowRight":
+            return (
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 6.35742H12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.5 1L12 6.35738L6.5 11.7148" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            )
     }
 }
 

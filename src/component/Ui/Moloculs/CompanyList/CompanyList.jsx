@@ -10,14 +10,14 @@ function CompanyList() {
         { Id: 5, Title: 'Contact Us', Link: '' },
     ]
     return (
-        <div className="w-1/4 h-full flex justify-center items-center pt-5">
+        <div className=" h-full flex justify-start items-center pt-5">
             <ul className="FooterUl flex justify-between items-start flex-col h-full">
                 <li>
-                    <P>Our Company</P>
+                    <P className={'font-[Lafog]'}>Our Company</P>
                 </li>
                 {CompanyListData.map((item) => (
                     <li>
-                        <Link to={item.Link}>{item.Title}</Link>
+                        <Link className={'font-[Lafog]'} to={item.Link}>{item.Title}</Link>
                     </li>
                 ))}
             </ul>

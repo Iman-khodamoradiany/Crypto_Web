@@ -10,14 +10,14 @@ function FooterTour() {
         { Id: 5, Title: 'Support', Link: '' },
     ]
     return (
-        <div className="w-1/4 h-full flex justify-center items-center">
+        <div className=" h-full flex justify-center items-center">
             <ul className="flex justify-between items-start flex-col h-full FooterUl pt-5">
                 <li>
-                    <P>Take a tour</P>
+                    <P className={'font-[Lafog]'}>Take a tour</P>
                 </li>
                 {ListFooter.map((item) => (
                     <li key={item.Id}>
-                        <Link to={item.Link}>{item.Title}</Link>
+                        <Link className={'font-[Lafog]'} to={item.Link}>{item.Title}</Link>
                     </li>
                 ))}
             </ul>
