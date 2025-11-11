@@ -10,7 +10,7 @@ function FooterInfo() {
         { id: 4, icon: 'Linkdin' },
     ]
     return (
-        <div className="flex justify-between items-start flex-col w-1/4 gap-6">
+        <div className="flex h-full justify-between items-start flex-col w-1/4">
             <div>
                 <Img src={'./image/Logo.png'} />
             </div>
