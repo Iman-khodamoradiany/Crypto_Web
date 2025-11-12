@@ -1,3 +1,4 @@
+import DescriptionProductDetail from "../../Organims/DescriptionProductDetail/DescriptionProductDetail"
 import Facilities from "../../Organims/Facilities/Facilities"
 import SectionPicture from "../../Organims/SectionPicture/SectionPicture"
 
@@ -7,6 +8,7 @@ function ProductDetail() {
             <div className="w-[85%] mx-auto">
                 <SectionPicture />
                 <Facilities />
+                <DescriptionProductDetail />
             </div>
         </div>
     )
