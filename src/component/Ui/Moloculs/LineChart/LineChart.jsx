@@ -2,38 +2,121 @@ import {Line} from "react-chartjs-2"
 
 
 function LineChart({lineChartData}){
+    const customLabelPlugin = {
+    id: 'customLabelPlugin',
+    afterDatasetsDraw: (chart) => {
+      const { ctx, scales } = chart;
+      const x = scales.x.getPixelForValue(4.2);
+      const y = scales.y.getPixelForValue(100);
+      
+
+      const isDark = document.body.classList.contains('dark'); 
+       // const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+
+      ctx.save();
+      ctx.fillStyle =  isDark ? '#1a1a1a' : 'white';
+      ctx.strokeStyle =  isDark ? '#2b2b2b' : 'white';
+      ctx.lineWidth = 1;
+      ctx.font = 'normal 15px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+      const textLines = ['BALANCE', '$35.00'];
+      const lineHeight = 26;
+
+      ctx.shadowColor = 'rgb(0,0,0,0.3)';
+      ctx.shadowBlur = 10;
+      ctx.shadowOffsetX = 6;
+      ctx.shadowOffsetY = 6;
+    
+// محاسبه‌ی عرض و ارتفاع باکس
+      const textWidths = textLines.map(line => ctx.measureText(line).width);
+      const boxWidth = Math.max(...textWidths) + 100;
+      const boxHeight = textLines.length * lineHeight + 8;
+
+      const triangleHeight = 12;
+      const triangleWidth = 30;
+
+     const boxX = x - boxWidth / 2;
+     const boxY = y - boxHeight - triangleHeight +16;
+
+// رسم مستطیل
+     ctx.beginPath();
+     ctx.roundRect(boxX, boxY, boxWidth, boxHeight, 4);
+     ctx.fill();
+     ctx.stroke();
+
+// رسم مثلث پایین
+   ctx.beginPath();
+   ctx.moveTo(x - triangleWidth / 2, boxY + boxHeight);
+   ctx.lineTo(x + triangleWidth / 2, boxY + boxHeight);
+   ctx.lineTo(x, boxY + boxHeight + triangleHeight);
+   ctx.closePath();
+   ctx.fill();
+   ctx.stroke();
+
+   ctx.shadowColor='transparent'
+   ctx.shadowBlur=0;
+   ctx.shadowOffsetX=0;
+   ctx.shadowOffsetY=0;
+
+// رسم متن‌ها
+   ctx.fillStyle = 'gray';
+   textLines.forEach((line, i) => {
+   ctx.fillText(line, x, boxY + 10 + i * lineHeight);
+   });
+   
+
+   ctx.restore();
+    }
+  };
+
+  
     return(
         <div className=" chart-container" >
             <Line 
                height={'100px'}
-               width={'150'}
+               width={'100px'}
                data={lineChartData}
                options={{
                  responsive: true,
                  plugins:{
                     annotation: {
                         annotations: {
-                            // label: {
+                            // mylabel: {
                             //     type: 'label',
                             //     xValue: 4.2,
-                            //     yValue: 110,
-                            //     position: 'top',
+                            //     yValue: 115,
                             //     backgroundColor: 'white',
                             //     borderColor: 'lightGray',
                             //     borderWidth: 1,
-                            //     content: ['BALANCE, $35.00'],
+                            //     width:20,
+                            //     height:8,
+                            //     padding:14,
+                            //     cornerRadius: 8,
+                            //     content: ['BALANCE', '','$35.00'],
                             //     font: {
-                            //            size: 20,
+                            //            size: 12,
                             //            weight: 'bold',
-                            //            color:'black'
-                            //         },
-                            //     padding: 16,
-                            //     cornerRadius: 4,
+                            //            color:'gray'
+                            //         },      
                             //     textAlign: 'center',
                             //     display: true,
-                            //     z:100,
                             //     drawTime:'afterDatasetsDraw',
-                            //     clip:false
+                            //     z:9999,
+                            //     clip:false,
+                            //     shadowBlur:20,
+                            //     shadowOffsetY:4,
+                            //     shadowOffsetX:6,
+                            //     borderShadowColor:'Gray',
+                            //     backgroundShadowColor:'gray',
+                            //     callout:{
+                            //         display:true,
+                            //         side:'bottom',
+                            //         length:10,
+                            //         borderWidth:1,
+                            //         borderColor:'lightGray'
+                            //     }
                             // },
                             point1: {
                                 type: 'point',
@@ -83,16 +166,37 @@ function LineChart({lineChartData}){
                     },
                     y:{
                         min:0,
-                        max:100,
+                        max:116,
                         border:{
                             dash:[4,4],
                             color:'lightGray',
                             dark:{color:'gray'}
                         },
                         grid:{
+                            drawTicks:true,
+                            drawOnChartArea:true,
+                            callback:function(context){
+                                const value=context.ticks.value
+                                if(value>100){
+                                    return ''
+                                }
+                                return value
+                            },
                             display:true,
-                            color:'lightGray',
-                            dark:{color:'gray'},
+                            color:function(context){
+                                const value=context.tick.value;
+                                if(value>100){
+                                    return 'transparent'
+                                }
+                                return "lightGray"
+                            },
+                            dark:{color:function(context){
+                                const value=context.tick.value;
+                                if(value>100){
+                                    return 'transparent'
+                                }
+                                return 'gray'
+                            }},
                         },
                         ticks:{
                             stepSize:20,
@@ -107,6 +211,7 @@ function LineChart({lineChartData}){
                     }
                  }
                }}
+               plugins={[customLabelPlugin]}
             />
         </div>
     )

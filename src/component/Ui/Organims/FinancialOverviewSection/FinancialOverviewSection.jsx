@@ -22,7 +22,7 @@ function FinancialOverViewSection(){
                 <div className="py-8 flex flex-col items-end ">
                    <div className="pt-10 pe-6 w-10/12 ">
                        <div className="flex justify-end pe-4">
-                           <img src="/Tooltip.png" alt="" className="-my-5 me-4 z-10"/>
+                           {/* <img src="/Tooltip.png" alt="" className="-my-5 me-4 z-10"/> */}
                        </div>
                        <ChartComponent />
                    </div>
