@@ -16,7 +16,7 @@ function LeftMainAboutPage() {
                     <P className={"text-[1.4vw] text-[#585981DE] w-[90%]"}>Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est.</P>
                 </div>
             </div>
-            <div className="w-full h-[65%] relative mt-5">
+            <div className="w-full h-[65%] relative">
                 <Img className={"w-full h-full absolute -bottom-10 -left-8"} src={"./image/Video1.png"} />
             </div>
         </div>
