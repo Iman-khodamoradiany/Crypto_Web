@@ -11,7 +11,7 @@ function PictureProduct({setImgselect}) {
     return (
         <div className="w-full h-[25%] flex justify-center items-center gap-4">
             {Images.map((item) => (
-                <Button onClick={() => setImgselect(item.src)} className={'w-1/4'}>
+                <Button onClick={() => setImgselect(item.src)} className={'w-1/4 z-20'}>
                     <Img className={'w-full h-full'} src={item.src} />
                 </Button>
             ))}
