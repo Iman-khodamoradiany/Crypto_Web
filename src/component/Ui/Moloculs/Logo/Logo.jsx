@@ -17,7 +17,7 @@ function Logo() {
     return (
         <div className="flex justify-center items-center gap-3">
             <Link to={'/'}>
-                <Img src={'./image/Logo.png'} />
+                <Img src={'/image/Logo.png'} />
             </Link>
             <button
                 className={`w-[100px] flex justify-center relative items-center h-[40px] border-2 rounded-full ${isdarkMode ? 'border-[#1DAEFF] bg-[#313030]' : null}`}

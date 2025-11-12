@@ -12,7 +12,7 @@ function FooterInfo() {
     return (
         <div className="flex h-full justify-between items-start flex-col w-2/6 ">
             <div>
-                <Img src={'./image/Logo.png'} />
+                <Img src={'/image/Logo.png'} />
             </div>
             <div className="w-full">
                 <P className="w-full font-[LufagLight] text-[1vw] text-[#8F90A6] leading-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
