@@ -4,18 +4,20 @@ import P from "../../Atoms/P/P";
 
 function LeftMainAboutPage() {
     return (
-        <div className="w-1/2 flex justify-between items-start flex-col h-full bg-green-400">
-            <div>
-                <Icons Name={'Lock'} />
+        <div className="w-1/2 flex justify-between items-start flex-col h-full">
+            <div className="w-full h-[40%] flex justify-between items-start flex-col gap-5 pl-8">
+                <div>
+                    <Icons Name={'Lock'} />
+                </div>
+                <div>
+                    <P className={"text-[3.2vw] font-bold"}>Pellentesque ac tortor</P>
+                </div>
+                <div>
+                    <P className={"text-[1.4vw] text-[#585981DE] w-[90%]"}>Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est.</P>
+                </div>
             </div>
-            <div>
-                <P>Pellentesque ac tortor</P>
-            </div>
-            <div>
-                <P>Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est.</P>
-            </div>
-            <div className="w-full h-2/3">
-                <Img className={"w-full h-full"} src={"./image/Video1.png"} />
+            <div className="w-full h-[65%] relative mt-5">
+                <Img className={"w-full h-full absolute -bottom-10 -left-8"} src={"./image/Video1.png"} />
             </div>
         </div>
     )
