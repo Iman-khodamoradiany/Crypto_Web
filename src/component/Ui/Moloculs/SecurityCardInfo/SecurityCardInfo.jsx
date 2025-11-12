@@ -10,7 +10,7 @@ function SecurityCardInfo(){
                 <P className="text-[clamp(1.8rem,3.6vw,4rem)] mx-w-xl  font-semibold dark:text-[white]">
                     Pellentesque ac tortor
                 </P>
-                <P className="text-gray-500 text-[clamp(1.rem,1.8vw,2.2rem)] max-w-lg">
+                <P className="text-gray-500 text-[clamp(1.rem,1.8vw,2.2rem)] max-w-lg leading-loose">
                     Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est.
                 </P>
             </div>
