@@ -5,8 +5,8 @@ function UserTestimonialsCarouselHeader(){
     return(
         <div className="flex flex-col items-center gap-8">
             <Icons Name={'hexagonInUserTestimonialsTitle'} />
-            <div className="flex flex-col gap-4">
-                <P className="text-5xl font-semibold text-center">What our members said ?</P>
+            <div className="flex flex-col gap-4 dark:text-[white]">
+                <P className="text-5xl font-semibold text-center ">What our members said ?</P>
                 <P className="text-lg text-gray-500 text-center">Nam sollicitudin dignissim nunc, cursus ullamcorper.</P>
             </div>
         </div>
