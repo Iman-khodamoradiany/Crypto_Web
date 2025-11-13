@@ -4,7 +4,7 @@ import ContactUsSection from "../../Organims/ContactUsSection/ContactUsSection"
 function ContactUs(){
     return(
         <div>
-           <ContactUsPageHeader />
+           <ContactUsPageHeader/>
            <ContactUsSection />
         </div>
     )

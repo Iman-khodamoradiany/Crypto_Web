@@ -24,10 +24,10 @@ function UserTestimonialsCarousel(){
                 className="swiper-container dark:bg-black">
                     {
                         userTestimonialsArray.map((item,index)=>(
-                                <SwiperSlide className="dark:bg-slate-900 flex flex-col items-center" key={index} style={{height:"350px"}}>
+                                <SwiperSlide className="dark:bg-[#17191C] flex flex-col items-center" key={index} style={{height:"350px"}}>
                                     <div className="flex flex-col items-center justify-center gap-10">
                                         <Img src={item.image} className="w-[12%] mx-auto rounded-full shadow-lg shadow-gray-400 dark:shadow-black"></Img>
-                                        <P className="text-center max-w-lg mx-auto text-gray-500 ">{item.comment}</P>
+                                        <P className="text-center text-[clamp(1.rem,1.8vw,2.2rem)] max-w-lg mx-auto text-gray-500 ">{item.comment}</P>
                                     </div>
                                 </SwiperSlide> 
                         ))
