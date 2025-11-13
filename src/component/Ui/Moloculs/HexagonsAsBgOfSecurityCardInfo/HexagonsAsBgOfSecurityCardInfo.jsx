@@ -2,7 +2,11 @@ import Icons from "../../Atoms/Icons/Icons"
 
 function HexagonsAsBgOfSecurityCardInfo(){
     return(
+<<<<<<< HEAD
         <div className="flex relative">
+=======
+        <div className="flex relative ">
+>>>>>>> feature/FinancialOverviewSection
             <div className="absolute top-32">
                 <Icons Name={'Hexagon1SecurityCartInfo'} />
             </div>
