@@ -1,3 +1,4 @@
+import HexagonsAsBgOfSecurityCardInfo from "../../Moloculs/HexagonsAsBgOfSecurityCardInfo/HexagonsAsBgOfSecurityCardInfo"
 import MakePoint from "../../Moloculs/MakePoint/MakePoint"
 
 function PointProductDetail() {
@@ -6,9 +7,12 @@ function PointProductDetail() {
     const List3 = ['Central Cooling', 'Electric Range', 'Laundry Room', 'Swimming Pool']
     return (
         <div className="w-1/2 flex justify-between items-center h-[150px] my-5">
-            <MakePoint item={List1}/>
-            <MakePoint item={List2}/>
-            <MakePoint item={List3}/>
+            <MakePoint item={List1} />
+            <MakePoint item={List2} />
+            <MakePoint item={List3} />
+            <div className="absolute -left-2 top-[48%] scale-150">
+                <HexagonsAsBgOfSecurityCardInfo />
+            </div>
         </div>
     )
 }
