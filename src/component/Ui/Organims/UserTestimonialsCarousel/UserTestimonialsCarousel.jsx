@@ -11,7 +11,7 @@ import Img from "../../Atoms/Img/Img";
 
 function UserTestimonialsCarousel(){
     return(
-        <div className="flex flex-col gap-12 items-center py-2 dark:bg-[black]">
+        <div className="flex flex-col gap-12 items-center py-2 dark:bg-[#0E1012]">
             <UserTestimonialsCarouselHeader />
             <div className="w-8/12 mx-auto flex items-center relative">
                 <Swiper 
@@ -39,7 +39,7 @@ function UserTestimonialsCarousel(){
                 <div  className=' swiper-button-prev'>
                     <Img src="/leftButtonSwiper.png"></Img>
                 </div>
-                <div className="swiper-pagination dark:bg-black py-6"></div>
+                <div className="swiper-pagination dark:bg-[#0E1012] py-6"></div>
             </div>    
         </div>
     )
