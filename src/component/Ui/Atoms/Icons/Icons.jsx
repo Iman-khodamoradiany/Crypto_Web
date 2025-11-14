@@ -384,6 +384,13 @@ function Icons({ Name }) {
                 </svg>
 
             )
+        case "Checked":
+            return (
+                <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7 0.3C13.3 -0.1 12.7 -0.1 12.3 0.3L5 6.8L1.8 4.3C1.4 3.9 0.7 3.9 0.3 4.3C-0.1 4.7 -0.1 5.4 0.3 5.9L3.7 10.5C4.1 10.8 4.6 11 5.1 11C5.6 11 6.1 10.8 6.5 10.5L13.8 1.7C14.1 1.3 14.1 0.7 13.7 0.3Z" fill="#1DAEFF" />
+                </svg>
+
+            )
     }
 }
 
