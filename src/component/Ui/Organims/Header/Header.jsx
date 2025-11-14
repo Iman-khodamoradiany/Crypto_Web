@@ -4,8 +4,8 @@ import SeactionFilterHeader from "../SectionFilterHeader/SectionFilterHeader"
 
 function Header() {
     return (
-        <div className="h-[87vh] relative z-20 ">
-            <Img className={'w-full h-full absolute'} src="./image/BGheader.jpg" alt="" />
+        <div className="h-[87vh] relative z-20">
+            <Img className={'w-full h-full absolute'} src={`./image/BGheader.jpg`} alt="" />
             <div className="absolute  w-3/6 gap-5 h-5/6 right-[40%] flex justify-center items-start flex-col">
                 <div className="w-full flex justify-start items-center">
                     <P className={'text-[3.7vw] w-3/4 font-bold'}>Easy way to find a
