@@ -4,7 +4,7 @@ import P from "../../Atoms/P/P";
 
 function CateGoryFilterHeader() {
     return (
-        <div className="w-1/4 bg-white h-full rounded-md flex justify-between items-center pl-4 pr-1.5 py-1.5">
+        <div className="w-1/4 bg-white dark:bg-[#0E1012] h-full rounded-md flex justify-between items-center pl-4 pr-1.5 py-1.5">
             <div className="flex justify-center items-center scale-110">
                 <Icons Name={"Settign"} />
             </div>

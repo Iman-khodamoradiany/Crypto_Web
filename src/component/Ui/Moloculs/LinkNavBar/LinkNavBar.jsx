@@ -10,7 +10,7 @@ function LinkNavBar() {
             <ul className="flex justify-center items-center gap-14">
                 {NavBarList.map((item) => (
                     <li key={item.key}>
-                        <Link className={`text-[1vw] duration-500 ${Pathnam.pathname == item.Link ? "NavBarAnimationAvtive text-[#1DAEFF]" : "NavBarAnimation"} hover:text-[#1DAEFF] relative`} 
+                        <Link className={`text-[1vw] dark:text-white duration-500 ${Pathnam.pathname == item.Link ? "NavBarAnimationAvtive text-[#1DAEFF]" : "NavBarAnimation"} hover:text-[#1DAEFF] relative`} 
                         to={item.Link}>{item.title}</Link>
                     </li>
                 ))}

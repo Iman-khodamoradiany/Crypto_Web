@@ -5,7 +5,7 @@ import ChartSection from "../../Moloculs/ChartSection/ChartSection"
 
 function FinancialOverViewSection(){
     return(
-        <div className="flex flex-col gap-24 h-[1100px] dark:bg-[black]">
+        <div className="flex flex-col gap-24 h-[1100px] ">
            <div className="flex flex-col gap-24">
                 <HexagonsAsBgOfChartComponent />
                 <ChartSection />

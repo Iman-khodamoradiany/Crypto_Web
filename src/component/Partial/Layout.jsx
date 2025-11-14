@@ -1,9 +1,14 @@
+import { createContext, useState } from "react";
 import Footer from "../Ui/Organims/Footer/Footer";
 import NavBar from "../Ui/Organims/NavBar/NavBar";
 
-function Layout({children}){
-    return(
-        <div>
+export const MyContext = createContext()
+function Layout({ children }) {
+
+    const [isdarkMode, setIsDarkMode] = useState(false)
+
+    return (
+        <MyContext.Provider value={{isdarkMode , setIsDarkMode}}>
             <header className="h-[13vh]">
                 <NavBar />
             </header>
@@ -13,7 +18,7 @@ function Layout({children}){
             <footer className="w-full">
                 <Footer />
             </footer>
-        </div>
+        </MyContext.Provider>
     )
 }
 

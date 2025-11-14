@@ -12,8 +12,8 @@ function FooterSubscribe() {
             <div>
                 <P className={'text-[#8F90A6] text-[1vw] w-[90%] font-[LufagLight]'}>Subscribe to get latest property, blog news from us</P>
             </div>
-            <div className="w-11/12 flex justify-between px-3 items-center border-2 border-[#D0D0E3] rounded-xl h-[55px]">
-                <Input className={"h-full outline-none"} placeholder={"Email Address"} />
+            <div className="w-11/12 flex justify-between px-3 items-center border-2 border-[#D0D0E3] dark:bg-white rounded-xl h-[55px]">
+                <Input className={"h-full outline-none bg-transparent"} placeholder={"Email Address"} />
                 <Button className={"w-[35px] h-[35px] bg-[#1DAEFF] rounded-full flex justify-center items-center"}>
                     <Icons Name={"ArrowRight"} />
                 </Button>

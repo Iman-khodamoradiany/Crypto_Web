@@ -5,7 +5,7 @@ import FooterTour from "../../Moloculs/FooterTour/FooterTour"
 
 function Footer(){
     return(
-        <div className="w-[90%] mx-auto mt-10 pb-10 flex justify-between items-start h-[350px]">
+        <div className="w-[90%] mx-auto mt-10 pb-10 flex justify-between items-start h-[350px] dark:text-white">
             <FooterInfo />
             <FooterTour />
             <CompanyList />
