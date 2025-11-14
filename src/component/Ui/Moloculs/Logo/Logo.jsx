@@ -19,7 +19,7 @@ function Logo() {
             <Link to={'/'}>
                 {isdarkMode ?
                     <Icons Name={"Logo"} /> :
-                    <Img src={'./image/Logo.png'} />
+                    <Img src={'/image/Logo.png'} />
                 }
             </Link>
 
