@@ -11,7 +11,7 @@ export const lineChartInfo=[
     {xValue:4.2,yValue1:89,yValue2:74},
     {xValue:5,yValue1:80,yValue2:64},
     {xValue:5.4,yValue1:78,yValue2:62},
-    {xValue:6,yValue1:93,yValue2:77},
+    {xValue:6,yValue1:93,yValue2:76},
     {xValue:6.5,yValue1:100,yValue2:84},
 ]
 
