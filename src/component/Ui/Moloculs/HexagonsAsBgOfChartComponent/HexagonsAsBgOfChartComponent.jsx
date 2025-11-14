@@ -2,7 +2,7 @@ import Icons from "../../Atoms/Icons/Icons"
 
 function HexagonsAsBgOfChartComponent(){
     return(
-        <div className="flex justify-end relative -z-10">
+        <div className="flex justify-end relative z-10">
             <div className="absolute -top-20 right-28 ">
                 <Icons Name={'MediumGrayHexagon'} />
             </div>

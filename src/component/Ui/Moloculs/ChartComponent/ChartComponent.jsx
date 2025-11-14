@@ -15,9 +15,9 @@ function ChartComponent(){
     if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
-    const gradient = ctx.createLinearGradient(0, 0, 0, 200);
-    gradient.addColorStop(0, "rgba(0,255,0,0.4)");
-    gradient.addColorStop(1, "rgba(255,255,0,0)");
+    const gradient = ctx.createLinearGradient(0, 0, 0, 350);
+    gradient.addColorStop(0, "rgba(210, 238, 130, 1)");
+    gradient.addColorStop(1, "rgba(243,225,107,0)");
     
     const chartData={
     labels:lineChartInfo.map(item=>item.xValue),

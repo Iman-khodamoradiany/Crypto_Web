@@ -1,6 +1,7 @@
 import {Line} from "react-chartjs-2"
 
-
+ const isDark = document.body.classList.contains('dark'); 
+   
 function LineChart({lineChartData}){
     const customLabelPlugin = {
     id: 'customLabelPlugin',
@@ -9,10 +10,6 @@ function LineChart({lineChartData}){
       const x = scales.x.getPixelForValue(4.2);
       const y = scales.y.getPixelForValue(100);
       
-
-      const isDark = document.body.classList.contains('dark'); 
-       // const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
 
       ctx.save();
       ctx.fillStyle =  isDark ? '#1a1a1a' : 'white';
