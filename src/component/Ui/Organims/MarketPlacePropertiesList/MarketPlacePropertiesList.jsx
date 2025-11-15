@@ -16,7 +16,7 @@ function MarketPlacePropertiesList(){
                         <div>
                             <Img src={item.image} />
                         </div>
-                        <div className="flex flex-col gap-5 items-start justify-between w-full">
+                        <div className="flex flex-col gap-5 items-start justify-between w-full p-[0.5vw]">
                             <P className="text-[clamp(0.7rem,1.6vw,1.8rem)] font-semibold max-w-[19.3vw]">{item.address}</P>
                             <div className=" w-full flex  justify-between text-[#8F90A6] text-[clamp(0.7rem,1.2vw,1.8rem)]  ">
                                 <div className="flex gap-2"> 

@@ -20,7 +20,7 @@ function NewPropertiesSection(){
                     <div className="grid grid-cols-2 gap-6 w-11/12 mx-auto relative z-40">
                        {
                             NewPropertiesList.map((item,index)=>(
-                                <div key={index} className="grid grid-cols-3 gap-6 border-2 border-[#DCDCEB] rounded-3xl p-[1.5vw] hover:border-[#1DAEFF] hover:shadow-lg hover:shadow-gray-300 scale-100 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                                <div key={index} className="grid grid-cols-3 gap-6 bg-white border-2 border-[#DCDCEB] rounded-3xl p-[1.5vw] hover:border-[#1DAEFF] hover:shadow-lg hover:shadow-gray-300 scale-100 transform hover:scale-105 transition-transform duration-300 ease-in-out">
                                     <div>
                                         <Img src={item.image} />
                                     </div>
@@ -40,12 +40,12 @@ function NewPropertiesSection(){
                                                 <P>Garage</P>
                                             </div>
                                         </div>
-                                        <div className="w-full flex justify-between text-[#8F90A6] text-[clamp(0.7rem,1.2vw,1.8rem)] font-semibold">
-                                            <div className="flex gap-2">
+                                        <div className="w-full flex items-center justify-between font-semibold text-[clamp(0.7rem,1.2vw,1.8rem)]">
+                                            <div className="flex gap-2 items-center text-[#8F90A6] ">
                                                 <P>Posted by</P>
                                                 <P>{item.postedBy}</P>
                                             </div>
-                                            <P>{item.price}</P>
+                                            <P className="py-2 px-4 bg-[#8b8989] text-white rounded-lg">{item.price}</P>
                                         </div>
                                     </div> 
                                 </div>
