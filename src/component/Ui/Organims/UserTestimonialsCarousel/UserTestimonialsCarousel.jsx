@@ -34,10 +34,10 @@ function UserTestimonialsCarousel(){
                     } 
                 </Swiper>  
                 <div  className='swiper-button-next'>
-                    <Img src="/RightButtonSwiper.png"></Img>
+                    <Img src="/image/RightButtonSwiper.png"></Img>
                 </div>
                 <div  className=' swiper-button-prev'>
-                    <Img src="/leftButtonSwiper.png"></Img>
+                    <Img src="/image/leftButtonSwiper.png"></Img>
                 </div>
                 <div className="swiper-pagination dark:bg-[#0E1012] py-6"></div>
             </div>    
