@@ -9,7 +9,6 @@ import { useNavigate } from "react-router";
 import { toast, ToastContainer } from "react-toastify";
 
 function ValidateLoginForm() {
-    const [allUser, setAllUser] = useState();
     const GetUser = LoginUser();
     const { Login } = useContext(AuthContext)
     const navigate = useNavigate()
@@ -49,7 +48,6 @@ function ValidateLoginForm() {
             initialValues={{ email: "", password: "" }}
             validationSchema={LoginSchema}
             onSubmit={(value) => Submit(value)}
-
         >
             <Form className="w-full flex justify-center items-center flex-col gap-8">
                 <ToastContainer />
