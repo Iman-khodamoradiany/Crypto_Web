@@ -5,13 +5,13 @@ import ChartSection from "../../Moloculs/ChartSection/ChartSection"
 
 function FinancialOverViewSection() {
     return (
-        <div className="flex flex-col gap-24 h-[1100px] ">
+        <div className="flex flex-col gap-24 h-[1200px] ">
             <div className="flex flex-col gap-24">
 
                 <HexagonsAsBgOfChartComponent />
                 <ChartSection />
             </div>
-            <div className=" relative h-64 pt-[2.3vw]">
+            <div className=" relative h-[450px] pt-[2.3vw]">
                 <div className="absolute">
                     <HexagonsAsBgOfSecurityCardInfo />
                 </div>

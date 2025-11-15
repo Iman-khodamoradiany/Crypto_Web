@@ -20,12 +20,12 @@ function NewPropertiesSection() {
                     <div className="grid grid-cols-2 gap-6 w-11/12 mx-auto relative z-40">
                         {
                             NewPropertiesList.map((item, index) => (
-                                <div key={index} className="grid grid-cols-3 gap-6 bg-white border-2 border-[#DCDCEB] rounded-3xl p-[1.5vw] hover:border-[#1DAEFF] hover:shadow-lg hover:shadow-gray-300 scale-100 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                                <div key={index} className="grid grid-cols-3 gap-6 bg-white dark:bg-[#17191C] border-2 border-[#DCDCEB] rounded-3xl p-[1.5vw] hover:border-[#1DAEFF] hover:shadow-lg hover:shadow-gray-300 scale-100 transform hover:scale-105 transition-transform duration-300 ease-in-out">
                                     <div>
                                         <Img src={item.image} />
                                     </div>
                                     <div className="col-span-2 flex flex-col items-start justify-between w-full">
-                                        <P className="text-[clamp(0.7rem,1.6vw,1.8rem)] font-semibold max-w-[19.3vw]">{item.address}</P>
+                                        <P className="text-[clamp(0.7rem,1.6vw,1.8rem)] font-semibold max-w-[19.3vw] dark:text-white">{item.address}</P>
                                         <div className=" w-full flex  justify-between text-[#8F90A6] text-[clamp(0.7rem,1.2vw,1.8rem)] font-semibold ">
                                             <div className="flex gap-2">
                                                 <P>{item.numberOfBedrooms}</P>
