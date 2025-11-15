@@ -8,10 +8,8 @@ import { AuthContext } from "../../../../Core/context/AuthContext";
 import { useNavigate } from "react-router";
 import { toast, ToastContainer } from "react-toastify";
 
-function ValidateLoginForm() {
-    const GetUser = LoginUser();
-    const { Login } = useContext(AuthContext)
-    const navigate = useNavigate()
+function ValidateLoginForm({ setCheck, check }) {
+    const { Login, SubmitLogin } = useContext(AuthContext)
     const LoginSchema = Yup.object().shape({
         email: Yup.string()
             .email("Please enter your email correctly.")
@@ -21,38 +19,17 @@ function ValidateLoginForm() {
             .min(8, "Password must be 8 digits.")
     });
 
-    const Submit = (value) => {
-        const users = GetUser.data;
-        const foundUser = users.find(
-            (item) => item.Email === value.email && item.Password === value.password
-        );
-
-        if (foundUser) {
-            Login(foundUser.Role);
-            toast.success("You are logged in", {
-                position: 'top-right'
-            })
-            setTimeout(() => {
-                navigate("/")
-            }, 4000);
-        } else {
-            toast.error("Not Found User...", {
-                position: 'top-right'
-            })
-        }
-
-    }
 
     return (
         <Formik
             initialValues={{ email: "", password: "" }}
             validationSchema={LoginSchema}
-            onSubmit={(value) => Submit(value)}
+            onSubmit={(value) => SubmitLogin(value)}
         >
             <Form className="w-full flex justify-center items-center flex-col gap-8">
                 <ToastContainer />
                 <LoginForm />
-                <SubmitLoginForm />
+                <SubmitLoginForm check={check} setCheck={setCheck} />
             </Form>
         </Formik>
 
