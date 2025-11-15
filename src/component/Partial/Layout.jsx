@@ -17,7 +17,7 @@ function Layout({ children }) {
             <main>
                 {children}
             </main>
-            <footer className={`w-full ${Pathname.pathname == "/Login" && 'hidden'}`}>
+            <footer className={`w-full ${Pathname.pathname == "/Login" && 'hidden'} h-[500px] flex justify-center items-end`}>
                 <Footer />
             </footer>
         </MyContext.Provider >
