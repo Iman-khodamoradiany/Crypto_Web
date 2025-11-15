@@ -3,8 +3,11 @@ import { ToastContainer } from "react-toastify";
 import SignUpForm from "../../Organims/SignUpForm/SignUpForm";
 import SubmitLoginForm from "../SumbitLoginForm/SubmitLoginForm";
 import * as Yup from 'yup';
+import { useContext } from "react";
+import { AuthContext } from "../../../../Core/context/AuthContext";
 
 function FormSignUp({ check, setCheck }) {
+    const { SubmitSignUp } = useContext(AuthContext)
     const SignUp = Yup.object().shape({
         email: Yup.string()
             .email("Please enter your email correctly.")
@@ -20,7 +23,7 @@ function FormSignUp({ check, setCheck }) {
         <Formik
             initialValues={{ email: "", password: "", Confirm: "" }}
             validationSchema={SignUp}
-            onSubmit={(value) => SubmitLogin(value)}
+            onSubmit={(value) => SubmitSignUp(value)}
         >
             <Form className="w-full flex justify-center items-center flex-col gap-8">
                 <ToastContainer />

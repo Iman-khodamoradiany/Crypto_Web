@@ -2,11 +2,13 @@ import { createContext, useState } from "react"
 import { toast } from "react-toastify"
 import { LoginUser } from "../Services/querys/LoginFunction"
 import { useNavigate } from "react-router"
+import { SendData } from "../Services/Moutaions/SignUp"
 
 export const AuthContext = createContext()
 
 export const AuthProvider = ({ children }) => {
     const GetUser = LoginUser();
+    const SendUser = SendData()
     const navigate = useNavigate()
 
     const [user, setUser] = useState(() => {
@@ -42,8 +44,25 @@ export const AuthProvider = ({ children }) => {
 
     }
 
+    const SubmitSignUp = (value) => {
+        const Data = { Email: value.email, Password: value.password, Role: 'User' }
+        SendUser.mutate(Data, {
+            onSuccess: (res) => {
+                const role = res.Role || "user";
+                Login(role);
+                toast.success("You are registered and logged in!", {
+                    position: "top-right",
+                });
+                setTimeout(() => {
+                    navigate("/");
+                }, 2000);
+            },
+        });
+    };
+
+
     return (
-        <AuthContext.Provider value={{ user, Login, SubmitLogin }}>
+        <AuthContext.Provider value={{ user, Login, SubmitLogin, SubmitSignUp }}>
             {children}
         </AuthContext.Provider>
     )
