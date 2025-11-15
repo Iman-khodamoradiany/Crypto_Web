@@ -1,15 +1,14 @@
 import MainAboutPage from "../../Organims/MainAboutPage/MainAboutPage"
 import UserTestimonialsCarousel from "../../Organims/UserTestimonialsCarousel/UserTestimonialsCarousel"
-
+import  PromoBanner from "../../Organims/PromoBanner/PromoBanner"
+import AboutUsPerformanceMetrics from "../../Organims/AboutUsPerformanceMetrics/AboutUsPerformanceMetrics"
 function AboutUs(){
     return(
         <div>
-            <div>حجاز</div>
+            <AboutUsPerformanceMetrics />
             <MainAboutPage />
-            <div>
-                <UserTestimonialsCarousel />
-            </div>
-            <div>حجاز</div>
+            <UserTestimonialsCarousel />
+            <PromoBanner />
         </div>
     )
 }
