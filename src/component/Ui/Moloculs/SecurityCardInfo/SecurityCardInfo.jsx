@@ -16,7 +16,7 @@ function SecurityCardInfo(){
             </div>
             
             <div className="w-3/5">
-                <Img src="/crypto_feature.png" alt="" className="w-full"/>
+                <Img src="/image/crypto_feature.png" alt="" className="w-full"/>
             </div>
         </div>
     )
