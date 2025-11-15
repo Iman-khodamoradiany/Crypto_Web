@@ -568,6 +568,27 @@ function Icons({ Name }) {
                 </svg>
 
             )
+        case "Checkeds":
+            return (
+                <svg width="103" height="109" viewBox="0 0 103 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_1_660)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M45.56 38H57.12C61.64 38 64.6667 41.8388 64.6667 47.5486V60.728C64.6667 66.42 61.64 70.2588 57.12 70.2588H45.56C41.04 70.2588 38 66.42 38 60.728V47.5486C38 41.8388 41.04 38 45.56 38ZM50.5733 58.9521L56.9067 51.2906C57.36 50.7422 57.36 49.8551 56.9067 49.2906C56.4533 48.7422 55.7067 48.7422 55.2533 49.2906L49.7467 55.952L47.4133 53.1294C46.96 52.581 46.2133 52.581 45.76 53.1294C45.3067 53.6778 45.3067 54.5649 45.76 55.1294L48.9333 58.9521C49.16 59.2263 49.4533 59.3553 49.7467 59.3553C50.0533 59.3553 50.3467 59.2263 50.5733 58.9521Z" fill="#69B99D" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_1_660" x="-2.66675" y="-3.22571" width="108" height="114.711" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset />
+                            <feGaussianBlur stdDeviation="19" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.411765 0 0 0 0 0.72549 0 0 0 0 0.615686 0 0 0 0.32 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_660" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_660" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+
+
+            )
     }
 }
 
