@@ -1,3 +1,6 @@
+import P from "../../Atoms/P/P"
+import Img from "../../Atoms/Img/Img"
+
 function AboutUsHeader(){
     return(
         <div className="bg-[url('/public/image/ContactUsImages/Banner.png')] bg-center bg-cover min-h-72 relative z-30">
