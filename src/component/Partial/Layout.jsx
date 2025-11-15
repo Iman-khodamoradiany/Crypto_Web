@@ -1,21 +1,27 @@
-import { useLocation, useParams } from "react-router";
+import { createContext, useState } from "react";
 import Footer from "../Ui/Organims/Footer/Footer";
 import NavBar from "../Ui/Organims/NavBar/NavBar";
+import { useLocation } from "react-router";
 
+export const MyContext = createContext()
 function Layout({ children }) {
-    const Pathname = useLocation();
+    const Pathname = useLocation()
+    console.log(Pathname.pathname)
+    const [isdarkMode, setIsDarkMode] = useState(false)
+
     return (
-        <div>
-            <header className={`h-[13vh] ${Pathname.pathname == '/Login' && 'hidden'}`}>
+        <MyContext.Provider value={{ isdarkMode, setIsDarkMode }}>
+            <header className={`h-[13vh] ${Pathname.pathname == "/Login" && 'hidden'}`}>
+
                 <NavBar />
             </header>
             <main>
                 {children}
             </main>
-            <footer className={`w-full ${Pathname.pathname == "/Login" && 'hidden'}`}>
+            <footer className={`w-full ${Pathname.pathname == "/Login" && 'hidden'} h-[500px] flex justify-center items-end`}>
                 <Footer />
             </footer>
-        </div >
+        </MyContext.Provider >
     )
 }
 

@@ -6,7 +6,7 @@ function MakePoint({item}){
         <div className="h-full">
             <ul className="flex h-full justify-between items-start flex-col">
                 {item.map((item) => (
-                    <li className="flex justify-center items-center gap-3 text-[#585981DE]">
+                    <li className="flex justify-center items-center gap-3 text-[#585981DE] dark:text-white">
                         <Icons Name={'Checked'} />
                         <P>{item}</P>
                     </li>

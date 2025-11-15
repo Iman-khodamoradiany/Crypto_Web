@@ -10,10 +10,10 @@ function LeftMainAboutPage() {
                     <Icons Name={'Lock'} />
                 </div>
                 <div>
-                    <P className={"text-[3.2vw] font-bold"}>Pellentesque ac tortor</P>
+                    <P className={"text-[3.2vw] font-bold dark:text-white"}>Pellentesque ac tortor</P>
                 </div>
                 <div>
-                    <P className={"text-[1.4vw] text-[#585981DE] w-[90%]"}>Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est.</P>
+                    <P className={"text-[1.4vw] text-[#585981DE] w-[90%] dark:text-[#FFFFFFDE]"}>Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est.</P>
                 </div>
             </div>
             <div className="w-full h-[65%] relative">

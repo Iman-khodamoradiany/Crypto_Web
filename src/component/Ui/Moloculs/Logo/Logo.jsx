@@ -1,10 +1,10 @@
 import { Link } from "react-router";
 import Img from "../../Atoms/Img/Img";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Icons from "../../Atoms/Icons/Icons";
-
+import { MyContext } from "../../../Partial/Layout";
 function Logo() {
-    const [isdarkMode, setIsDarkMode] = useState(false)
+    const { isdarkMode, setIsDarkMode } = useContext(MyContext)
 
     useEffect(() => {
         if (isdarkMode) {
@@ -17,8 +17,12 @@ function Logo() {
     return (
         <div className="flex justify-center items-center gap-3">
             <Link to={'/'}>
-                <Img src={'/image/Logo.png'} />
+                {isdarkMode ?
+                    <Icons Name={"Logo"} /> :
+                    <Img src={'/image/Logo.png'} />
+                }
             </Link>
+
             <button
                 className={`w-[100px] flex justify-center relative items-center h-[40px] border-2 rounded-full ${isdarkMode ? 'border-[#1DAEFF] bg-[#313030]' : null}`}
                 onClick={() => setIsDarkMode(!isdarkMode)}>

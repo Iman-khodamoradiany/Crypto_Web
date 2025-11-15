@@ -2,28 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-   
-  .custom-bullet.swiper-pagination-bullet{
-  padding: 5px;
-  border-radius: 50%;
-  border: 2px solid #2e8231;
-  background-color: white;
-  opacity: 100%;
-  position: relative;
-  transition: all 0.3s ease;
-  
-}
-.custom-bullet.swiper-pagination-bullet-active{
-  background-color: #4CAF50;
-  border: 2px solid #2e8231;
-  padding: 5px;
-}
+@layer components {
+
+    .custom-bullet.swiper-pagination-bullet {
+        padding: 5px;
+        border-radius: 50%;
+        border: 2px solid #2e8231;
+        background-color: white;
+        opacity: 100%;
+        position: relative;
+        transition: all 0.3s ease;
+
+    }
+
+    .custom-bullet.swiper-pagination-bullet-active {
+        background-color: #4CAF50;
+        border: 2px solid #2e8231;
+        padding: 5px;
+    }
 
 
 }
 
-body.dark{
+
+body.dark {
     background-color: #0E1012;
 }
 
@@ -32,7 +34,7 @@ body.dark{
     src: url(../public/Font/static/Montserrat-Medium.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: LightMotserrat;
     src: url(../public/Font/static/Montserrat-Light.ttf);
 }
@@ -57,11 +59,11 @@ body.dark{
     src: url(../public/Font/Footer/LufgaLight.ttf);
 }
 
-*{
+* {
     font-family: MyFont;
 }
 
-.NavBarAnimation::after{
+.NavBarAnimation::after {
     position: absolute;
     content: "";
     width: 0;
@@ -72,11 +74,11 @@ body.dark{
     transition: 0.8s;
 }
 
-.NavBarAnimation:hover::after{
+.NavBarAnimation:hover::after {
     width: 100%;
 }
 
-.NavBarAnimationAvtive::after{
+.NavBarAnimationAvtive::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -86,16 +88,16 @@ body.dark{
     background-color: #1DAEFF;
 }
 
-.FooterUl > li:first-child{
+.FooterUl>li:first-child {
     font-weight: bold;
     font-size: 1.2vw;
 }
 
-.FooterUl > li > a{
+.FooterUl>li>a {
     position: relative;
 }
 
-.FooterUl > li > a::after{
+.FooterUl>li>a::after {
     content: "";
     width: 0;
     height: 2px;
@@ -106,6 +108,6 @@ body.dark{
     transition: all 0.5s;
 }
 
-.FooterUl > li > a:hover::after{
+.FooterUl>li>a:hover::after {
     width: 100%;
 }

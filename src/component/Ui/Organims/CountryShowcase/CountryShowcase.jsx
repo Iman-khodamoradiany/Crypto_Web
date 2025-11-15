@@ -2,8 +2,8 @@ import P from "../../Atoms/P/P"
 import {countryShowcaseList} from "../../../../Core/constans/countryShowcaseArray"
 function CountryShowcase(){
     return(
-        <div className="flex flex-col gap-10 items-center justify-center ">
-            <P className="text-[clamp(1.3rem,2.2vw,2.8rem)] text-center font-bold max-w-md">We are available in many
+        <div className="flex flex-col mt-20 gap-10 items-center justify-center h-[600px]">
+            <P className="text-[clamp(1.3rem,2.2vw,2.8rem)] text-center font-bold max-w-md dark:text-white">We are available in many
                well-known countries
             </P>
             <div className="grid grid-cols-4 gap-4 w-10/12 items-center">

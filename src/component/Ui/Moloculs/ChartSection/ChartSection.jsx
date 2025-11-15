@@ -4,7 +4,7 @@ import ChartInfoBox from "../../Moloculs/ChartInfoBox/ChartInfoBox"
 
 function ChartSection(){
     return(
-        <div className="grid grid-cols-2 gap-6 pt-4 w-11/12 relative z-30">
+        <div className="grid grid-cols-2 gap-20 pt-4 w-11/12 relative z-30">
             <div className="py-8 flex flex-col items-end ">
                 <div className="pe-6 w-10/12 ">
                     <ChartComponent />
