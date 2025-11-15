@@ -6,11 +6,12 @@ import { useLocation } from "react-router";
 export const MyContext = createContext()
 function Layout({ children }) {
     const Pathname = useLocation()
+    console.log(Pathname.pathname)
     const [isdarkMode, setIsDarkMode] = useState(false)
 
     return (
         <MyContext.Provider value={{ isdarkMode, setIsDarkMode }}>
-            <header className="h-[13vh]">
+            <header className={`h-[13vh] ${Pathname.pathname == "/Login" && 'hidden'}`}>
 
                 <NavBar />
             </header>

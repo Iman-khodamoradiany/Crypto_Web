@@ -16,15 +16,16 @@ function LinkNavBar() {
                     </li>
                 ))}
                 <li>
-                    <Link to={"/Login"}>
-                        {localStorage.getItem("user") ?
-                            <Button
-                                className={` ${Pathnam.pathname == '/LoginPage' ? 'text-white bg-[#1DAEFF] hover:text-[#1DAEFF] hover:bg-white' : 'text-[#1DAEFF] bg-white hover:text-white hover:bg-[#1DAEFF]'} border-2 px-9 py-2 rounded-xl border-[#1DAEFF] text-[1vw] transition-all duration-300 `}>{JSON.parse(localStorage.getItem("user")).Token}</Button> :
+                    {localStorage.getItem("user") ?
+                        <Button
+                            className={` ${Pathnam.pathname == '/LoginPage' ? 'text-white bg-[#1DAEFF] hover:text-[#1DAEFF] hover:bg-white' : 'text-[#1DAEFF] bg-white hover:text-white hover:bg-[#1DAEFF]'} border-2 px-9 py-2 rounded-xl border-[#1DAEFF] text-[1vw] transition-all duration-300 `}>{JSON.parse(localStorage.getItem("user")).Token}</Button> :
+                        <Link to={'/Login'}>
                             <Button
                                 className={` ${Pathnam.pathname == '/LoginPage' ? 'text-white bg-[#1DAEFF] hover:text-[#1DAEFF] hover:bg-white' : 'text-[#1DAEFF] bg-white hover:text-white hover:bg-[#1DAEFF]'} border-2 px-9 py-2 rounded-xl border-[#1DAEFF] text-[1vw] transition-all duration-300 `}>
                                 LOG IN
-                            </Button>}
-                    </Link>
+                            </Button>
+                        </Link>
+                    }
                 </li>
             </ul>
         </div>
