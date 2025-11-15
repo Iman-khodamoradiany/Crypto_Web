@@ -4,6 +4,7 @@ import AboutUs from "./component/Ui/Page/AboutUs/AboutUs"
 import Layout from "./component/Partial/Layout"
 import ContactUs from "./component/Ui/Page/ContactUs/ContactUs"
 import ProductDetail from "./component/Ui/Page/ProductDetail/ProductDetail"
+import LoginPage from "./component/Ui/Page/LoginPage/LoginPage"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Product" element={<h1>ProductPage</h1>} />
         <Route path="/Product/1" element={<ProductDetail />} />
+        <Route path="/Login" element={<LoginPage />} />
       </Routes >
     </Layout >
   )

@@ -23,9 +23,18 @@
 
 }
 
+body.dark{
+    background-color: #0E1012;
+}
+
 @font-face {
     font-family: MyFont;
     src: url(../public/Font/static/Montserrat-Medium.ttf);
+}
+
+@font-face{
+    font-family: LightMotserrat;
+    src: url(../public/Font/static/Montserrat-Light.ttf);
 }
 
 @font-face {
