@@ -1,12 +1,16 @@
+import Header from "../../Organims/Header/Header"
+import FinancialOverViewSection from "../../Organims/FinancialOverviewSection/FinancialOverviewSection"
+import CountryShowcase from "../../Organims/CountryShowcase/CountryShowcase"
+import NewPropertiesSection from "../../Organims/NewPropertiesSection/NewPropertiesSection"
+import PromoBanner from "../../Organims/PromoBanner/PromoBanner"
 function HomePage() {
     return (
         <div>
-            <div></div>
-            <div>خانم شیخ احمدی</div>
-            <div>خانم شیخ احمدی</div>
-            <div>حجاز</div>
-            <div>حجاز</div>
-            <div>حجاز</div>
+            <Header />
+            <FinancialOverViewSection />
+            <CountryShowcase />
+            <NewPropertiesSection />
+            <PromoBanner />
         </div>
     )
 }

@@ -1,3 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+    .custom-bullet.swiper-pagination-bullet {
+        padding: 5px;
+        border-radius: 50%;
+        border: 2px solid #2e8231;
+        background-color: white;
+        opacity: 100%;
+        position: relative;
+        transition: all 0.3s ease;
+
+    }
+
+    .custom-bullet.swiper-pagination-bullet-active {
+        background-color: #4CAF50;
+        border: 2px solid #2e8231;
+        padding: 5px;
+    }
+
+
+}
+
+
+body.dark {
+    background-color: #0E1012;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url(../public/Font/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: LightMotserrat;
+    src: url(../public/Font/static/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: NormalFont;
+    src: url(../public/Font//static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Button;
+    src: url(../public/Font/Button/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lafog;
+    src: url(../public/Font/Footer/LufgaMedium.ttf);
+}
+
+@font-face {
+    font-family: LufagLight;
+    src: url(../public/Font/Footer/LufgaLight.ttf);
+}
+
+* {
+    font-family: MyFont;
+}
+
+.NavBarAnimation::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: #1DAEFF;
+    transition: 0.8s;
+}
+
+.NavBarAnimation:hover::after {
+    width: 100%;
+}
+
+.NavBarAnimationAvtive::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: #1DAEFF;
+}
+
+.FooterUl>li:first-child {
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.FooterUl>li>a {
+    position: relative;
+}
+
+.FooterUl>li>a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: #1DAEFF;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.FooterUl>li>a:hover::after {
+    width: 100%;
+}
